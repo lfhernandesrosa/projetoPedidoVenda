@@ -1,5 +1,5 @@
 <h2>O Projeto</h2>
-        <p>Nesta aplicação você verá:</p>
+        <p>Nesta aplicação você irá encontrar:</p>
         <ul>
             <li>Cadastro de Cliente</li>
             <li>Cadastro de Produto</li>
