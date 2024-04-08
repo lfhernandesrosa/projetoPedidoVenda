@@ -27,7 +27,7 @@ new Vue({
                     });
         },
         cadastrarCliente() {
-            window.location.href = "cad_Cliente.php";
+            window.location.href = "cad_cliente.php";
         },
         paginaAnterior() {
             if (this.paginaAtual > 1) {
