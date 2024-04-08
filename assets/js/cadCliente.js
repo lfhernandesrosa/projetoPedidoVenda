@@ -56,7 +56,7 @@ new Vue({
             // Enviar a requisição
             axios({
                 method: metodo,
-                url: id ? '../controller/clienteController.php?id=${id}' : '../controller/clienteController.php',
+                url: id ? `../controller/clienteController.php?id=${id}` : '../controller/clienteController.php',
                 data: {
                     nome: this.nome,
                     cpf: this.cpf,
