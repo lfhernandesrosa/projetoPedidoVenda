@@ -10,6 +10,9 @@
 
 # Documentação 
 
+## Instalação
+Para o funcionamento da aplicação, basta subir em uma base de dados Mysql o arquivo que se encontra em dbbase -> desafio.sql e alterar as configurações do arquivo dbsae -> config.php
+
 ## Estrutura do Projeto
 O projeto foi dividido da seguinte forma:
   - Frontend utilizando Vue.js / HTML
