@@ -21,7 +21,9 @@ O projeto foi dividido da seguinte forma:
 
 ### Autenticação de Usuário
 Rota: /index.php
+
 Método: POST
+
 Corpo da Solicitação: Objeto JSON contendo username e password
 Quando logado o sistema irá redirecionar para a página inicial do sistema na Rota: /view/index.php
 
