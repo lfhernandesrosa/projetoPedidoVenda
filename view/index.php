@@ -6,7 +6,7 @@ require_once '../template/template_menu.php';
 <div class="page-content">
     <div class="container">
         <h2>O Projeto</h2>
-        <p>Nesta aplicação você poderá:</p>
+        <p>Nesta aplicação você irá encontrar:</p>
         <ul>
             <li>Cadastrar Clientes</li>
             <li>Cadastrar Produto</li>
