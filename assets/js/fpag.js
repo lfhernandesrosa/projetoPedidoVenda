@@ -18,7 +18,7 @@ new Vue({
         },
         
         cadastrarFormaPag() {
-            window.location.href = "cad_FormaPg.php";
+            window.location.href = "cad_formaPg.php";
         },
         abrirEdicao(fpag) {
             window.location.href = `cad_formaPg.php?id=${fpag.id}`;
