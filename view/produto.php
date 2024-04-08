@@ -2,37 +2,35 @@
 require_once '../template/template_header.php';
 require_once '../template/template_menu.php';
 ?>
-<div class="page-title">Clientes</div>
+<div class="page-title">Produtos</div>
 <div class="page-content d-flex justify-content-center">
     <div class="container">
         <div id="app">     
             <div class="text-right mb-3">
-                <button class="btn btn-primary" @click="cadastrarCliente">Cadastrar</button>
+                <button class="btn btn-primary" @click="cadastrarProduto">Cadastrar</button>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" v-model="termoBusca" placeholder="Buscar cliente...">
-            </div>
+                <input type="text" class="form-control" v-model="termoBusca" placeholder="Buscar produto...">
+            </div>            
             <table class="table">
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Email</th>
-                        <th>Cidade</th>
-                        <th>Estado</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th>
+                        <th>Status</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(user, index) in usuariosFiltrados" :key="index">
-                        <td>{{ user.nome }}</td>
-                        <td>{{ user.cpf }}</td>
-                        <td>{{ user.email }}</td>
-                        <td>{{ user.cidade }}</td>
-                        <td>{{ user.estado }}</td>
+                    <tr v-for="(prod, index) in produtosFiltrados" :key="index">
+                        <td>{{ prod.nome }}</td>
+                        <td>{{ prod.quantidade }}</td>
+                        <td>R$ {{ formatarPreco(prod.preco) }}</td>
+                        <td>{{ prod.status == 1 ? 'Ativo' : 'Inativo' }}</td>
                         <td>
-                            <button @click="abrirEdicao(user)" class="btn btn-sm btn-primary">Editar</button>
-                            <button @click="excluirUsuario(user.id)" class="btn btn-sm btn-danger">Excluir</button>
+                            <button @click="abrirEdicao(prod)" class="btn btn-sm btn-primary">Editar</button>
+                            <button @click="excluirProduto(prod.id)" class="btn btn-sm btn-danger">Excluir</button>
                         </td>
                     </tr>
                 </tbody>
@@ -56,4 +54,4 @@ require_once '../template/template_menu.php';
 <?php
 require_once '../template/template_footer.php';
 ?>
-<script src="../assets/js/cliente.js"></script>
+<script src="../assets/js/produto.js"></script>
