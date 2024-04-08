@@ -1,1 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
 
+#app {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+h1{
+	text-align: center;
+}
+
+label {
+    margin-top: 10px; /* Reduzindo o espaçamento entre os labels e inputs */
+    font-size: 0.9rem;
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    margin-top: 5px; /* Reduzindo o espaçamento entre os inputs */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+
+button {
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007bff; /* Cor azul */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+    width: 100%; /* O botão ocupa 100% da largura do container */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor azul escura no hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil no hover */
+}
+
+/* Estilo do botão de cadastro */
+#cadastro-btn {
+    margin-top: 10px; /* Espaçamento superior */
+    background-color: #d3d3d3; /* Cor verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+#cadastro-btn:hover {
+    background-color: #d3d3d3; /* Cor verde escura no hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil no hover */
+}
+
+/* Estilo do botão de cadastro */
+#cadastro-btn {
+    margin-top: 10px; /* Espaçamento superior */
+    background-color: #808080; /* Cor verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+#cadastro-btn:hover {
+    background-color: #d3d3d3; /* Cor verde escura no hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil no hover */
+}
+
+.grey-button {
+    background-color: grey;
+    /* Outros estilos, se necessário */
+}
